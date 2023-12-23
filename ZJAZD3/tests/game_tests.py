@@ -6,7 +6,7 @@ from TAU.ZJAZD3.src.game import generuj_plansze, rows, cols, wyswietl_plansze, w
 
 
 class TestMyGameFunctions(unittest.TestCase):
-    print(ilosc_przeszkod)
+
     def test_generate_board_size(self):
 
         plansza, start, stop = generuj_plansze(rows, cols)

@@ -33,12 +33,13 @@ for driver_name in DRIVER_NAMES:
 
     driver.get('https://wbijam.pl')
     sleep(2)
-    accept_cookies= driver.find_element(By.CLASS_NAME, 'e1sXLPUy ')
+    accept_cookies= driver.find_element(By.CLASS_NAME, 'qxOn2zvg.e1sXLPUy ')
     accept_cookies.click()
 
-    element_to_hover_over = driver.find_element(By.CLASS_NAME, 'dropdown')
+    element_to_hover_over = driver.find_elements(By.CLASS_NAME, 'dropdown')
     actions = ActionChains(driver)
-    actions.move_to_element(element_to_hover_over).perform()
+    actions.move_to_element(element_to_hover_over[2]).perform()
+    sleep(3)
 
     element = driver.find_element(By.CSS_SELECTOR, 'a.sub_link[rel="gleipnir"]')
     element.click()

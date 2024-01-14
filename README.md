@@ -13,3 +13,5 @@ Visit '[https://www.saucedemo.com/](https://wbijam.pl)' website.
 Scroll to chosen Anime (in this case 'Gleipnir')
 Click on it
 Confirm that it transfered you to appropiate subpage
+
+I had to change a code (scenario2.py) a bit after deadline due to probable work on the Wbijam.pl website, which caused the tests and scenario steps that I had prepared on time to stop working, as a result of which I had to make a slight modification (mainly references to individual elements on the website) in order to make the tests work again and correctly implement scenario2 in cucumber structure
